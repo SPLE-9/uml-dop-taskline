@@ -4,7 +4,7 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_CMEnECEoEfCMHZENt9PlSA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_DoGDsCEpEfCMHZENt9PlSA" name="*" visibility="package">
+    <packagedElement xmi:type="uml:Package" xmi:id="_DoGDsCEpEfCMHZENt9PlSA" name="taskline" visibility="package">
       <packagedElement xmi:type="uml:Package" xmi:id="_DYo18CEqEfCMHZENt9PlSA" name="MUser">
         <packagedElement xmi:type="uml:Interface" xmi:id="_fLLIwCEqEfCMHZENt9PlSA" name="User"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_qECIsCEqEfCMHZENt9PlSA" name="UserImpl" visibility="package">
