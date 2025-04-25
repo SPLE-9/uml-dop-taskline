@@ -166,7 +166,7 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_lxrTsCHPEfCEXJqvmcK_5Q" name="Task"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_oRmSwCHPEfCEXJqvmcK_5Q" name="TaskImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_shbwQCHPEfCEXJqvmcK_5Q" name="taskId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_DQds8CHQEfCEXJqvmcK_5Q" name="Property2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DQds8CHQEfCEXJqvmcK_5Q" name="title">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_QtPbICHQEfCEXJqvmcK_5Q" name="description">
@@ -178,6 +178,7 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_6qspoiHSEfCEXJqvmcK_5Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_6qsCkCHSEfCEXJqvmcK_5Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_I8dfESHTEfCEXJqvmcK_5Q" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" association="_I8cQ8CHTEfCEXJqvmcK_5Q"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_dfNQwCHbEfCW_tU7r-psAA" name="getTasksByProject"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_rjj9UCHQEfCEXJqvmcK_5Q" client="_oRmSwCHPEfCEXJqvmcK_5Q" supplier="_WjjuQCHQEfCEXJqvmcK_5Q"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_sXMZsCHQEfCEXJqvmcK_5Q" client="_oRmSwCHPEfCEXJqvmcK_5Q" supplier="_lxrTsCHPEfCEXJqvmcK_5Q"/>
