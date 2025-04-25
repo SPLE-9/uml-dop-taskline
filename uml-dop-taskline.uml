@@ -305,7 +305,10 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RjHVMCG6EfCHyP3Jxw372Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RjHVMSG6EfCHyP3Jxw372Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_RjH8QiG6EfCHyP3Jxw372Q" name="appointmentimpl" type="_Cb8zsCG4EfCHyP3Jxw372Q" association="_RjGHECG6EfCHyP3Jxw372Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RjH8QiG6EfCHyP3Jxw372Q" name="appointmentimpl" type="_Cb8zsCG4EfCHyP3Jxw372Q" association="_RjGHECG6EfCHyP3Jxw372Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WPKfsCHdEfCW_tU7r-psAA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WQD3kCHdEfCW_tU7r-psAA" value="*"/>
+      </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Di2qACG7EfCHyP3Jxw372Q" visibility="private" memberEnd="_Di3REiG7EfCHyP3Jxw372Q _Di4fMiG7EfCHyP3Jxw372Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Di3RECG7EfCHyP3Jxw372Q" source="org.eclipse.papyrus">
