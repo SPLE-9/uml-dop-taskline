@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CGm4QCEoEfCMHZENt9PlSA" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_DoJuECEpEfCMHZENt9PlSA" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DoK8MCEpEfCMHZENt9PlSA" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DoK8MSEpEfCMHZENt9PlSA" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_DoK8MiEpEfCMHZENt9PlSA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DoK8MyEpEfCMHZENt9PlSA"/>
+    </children>
+    <element xmi:type="uml:Package" href="uml-dop-taskline.uml#_DoGDsCEpEfCMHZENt9PlSA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DoJuESEpEfCMHZENt9PlSA" x="420" y="220" width="3381" height="1961"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_418HECGIEfChD41pi9QTAQ" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_418HESGIEfChD41pi9QTAQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_418HEyGIEfChD41pi9QTAQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Package" href="uml-dop-taskline.uml#_DoGDsCEpEfCMHZENt9PlSA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_418HEiGIEfChD41pi9QTAQ" x="620" y="220"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_CGm4QSEoEfCMHZENt9PlSA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_CGm4QiEoEfCMHZENt9PlSA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_CGm4QyEoEfCMHZENt9PlSA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="uml-dop-taskline.uml#_CERV8CEoEfCMHZENt9PlSA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="uml-dop-taskline.uml#_CERV8CEoEfCMHZENt9PlSA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_418HFCGIEfChD41pi9QTAQ" type="StereotypeCommentLink" source="_DoJuECEpEfCMHZENt9PlSA" target="_418HECGIEfChD41pi9QTAQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_418HFSGIEfChD41pi9QTAQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_418HGSGIEfChD41pi9QTAQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Package" href="uml-dop-taskline.uml#_DoGDsCEpEfCMHZENt9PlSA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_418HFiGIEfChD41pi9QTAQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_418HFyGIEfChD41pi9QTAQ"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_418HGCGIEfChD41pi9QTAQ"/>
+  </edges>
+</notation:Diagram>
