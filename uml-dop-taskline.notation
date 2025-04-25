@@ -239,14 +239,6 @@
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eUG1QiHXEfCW_tU7r-psAA" x="100" y="100"/>
           </children>
-          <children xmi:type="notation:Shape" xmi:id="_eUP_MCHXEfCW_tU7r-psAA" type="StereotypeComment">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_eUP_MSHXEfCW_tU7r-psAA"/>
-            <styles xmi:type="notation:EObjectValueStyle" xmi:id="_eUP_MyHXEfCW_tU7r-psAA" name="BASE_ELEMENT">
-              <eObjectValue xmi:type="uml:Association" href="uml-dop-taskline.uml#_huXsACEvEfCMHZENt9PlSA"/>
-            </styles>
-            <element xsi:nil="true"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eUP_MiHXEfCW_tU7r-psAA" x="100" y="100"/>
-          </children>
           <styles xmi:type="notation:TitleStyle" xmi:id="_03Y2NCEtEfCMHZENt9PlSA"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_03Y2NSEtEfCMHZENt9PlSA"/>
         </children>
@@ -2030,16 +2022,6 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eUHcUiHXEfCW_tU7r-psAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eUHcUyHXEfCW_tU7r-psAA"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eUHcVCHXEfCW_tU7r-psAA"/>
-  </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_eUQmQCHXEfCW_tU7r-psAA" type="StereotypeCommentLink" source="_hutDMCEvEfCMHZENt9PlSA" target="_eUP_MCHXEfCW_tU7r-psAA">
-    <styles xmi:type="notation:FontStyle" xmi:id="_eUQmQSHXEfCW_tU7r-psAA"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_eUQmRSHXEfCW_tU7r-psAA" name="BASE_ELEMENT">
-      <eObjectValue xmi:type="uml:Association" href="uml-dop-taskline.uml#_huXsACEvEfCMHZENt9PlSA"/>
-    </styles>
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eUQmQiHXEfCW_tU7r-psAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eUQmQyHXEfCW_tU7r-psAA"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eUQmRCHXEfCW_tU7r-psAA"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_eUZwMCHXEfCW_tU7r-psAA" type="StereotypeCommentLink" source="_jC280CGqEfCeUs9mEJ0Sdw" target="_eUZJIyHXEfCW_tU7r-psAA">
     <styles xmi:type="notation:FontStyle" xmi:id="_eUZwMSHXEfCW_tU7r-psAA"/>
