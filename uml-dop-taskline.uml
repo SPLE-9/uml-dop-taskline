@@ -7,8 +7,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_DoGDsCEpEfCMHZENt9PlSA" name="*" visibility="package">
       <packagedElement xmi:type="uml:Package" xmi:id="_DYo18CEqEfCMHZENt9PlSA" name="MUser">
         <packagedElement xmi:type="uml:Interface" xmi:id="_fLLIwCEqEfCMHZENt9PlSA" name="User"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_qECIsCEqEfCMHZENt9PlSA" name="UserImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_HeCIkCErEfCMHZENt9PlSA" name="userId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qECIsCEqEfCMHZENt9PlSA" name="UserImpl" visibility="package">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HeCIkCErEfCMHZENt9PlSA" name="userId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_S6EuECErEfCMHZENt9PlSA" name="email">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -83,7 +83,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UhIfIiGyEfCXNctFrykyhA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_UhH4ECGyEfCXNctFrykyhA">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e4R5ICGyEfCXNctFrykyhA" value="*"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_7ABm8CGyEfCXNctFrykyhA" name="getSharedUsers"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_7ABm8CGyEfCXNctFrykyhA" name="getSharedUsers" concurrency="concurrent"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_1xtVsCG3EfCHyP3Jxw372Q" name="MAppointment">
@@ -111,6 +111,56 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__v8OgCG5EfCHyP3Jxw372Q" client="_5-3nwCG5EfCHyP3Jxw372Q" supplier="_wTUIcCG5EfCHyP3Jxw372Q" contract="_wTUIcCG5EfCHyP3Jxw372Q"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Fe1KUCHCEfCkIo3EdN1ebA" name="MTimelog">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_OoQ0ACHCEfCkIo3EdN1ebA" name="Timelog"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dJPKICHCEfCkIo3EdN1ebA" name="TimelogImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kWUb4CHCEfCkIo3EdN1ebA" name="timelogId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vNLQsCHCEfCkIo3EdN1ebA" name="taskId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0a7H8CHCEfCkIo3EdN1ebA" name="userId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7CKhsCHCEfCkIo3EdN1ebA" name="timelogDate" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GlDWECHDEfCkIo3EdN1ebA" name="timelogType" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RcidACHDEfCkIo3EdN1ebA" name="timelogNotes" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4iSsUiHKEfCkIo3EdN1ebA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" aggregation="composite" association="_4iReMCHKEfCkIo3EdN1ebA"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_5R5BcCHDEfCkIo3EdN1ebA" client="_dJPKICHCEfCkIo3EdN1ebA" supplier="_OoQ0ACHCEfCkIo3EdN1ebA" contract="_OoQ0ACHCEfCkIo3EdN1ebA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kBEIICHDEfCkIo3EdN1ebA" name="getTimelogDetail"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_uRDxQCHDEfCkIo3EdN1ebA" name="validateTimelog"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Gq_ECHDEfCkIo3EdN1ebA" name="DTimelogDuration">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bqd0ICHEEfCkIo3EdN1ebA" name="TimelogImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOWmoCHIEfCkIo3EdN1ebA" name="timelogDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z25UMCHKEfCkIo3EdN1ebA" name="timelogimpl" type="_dJPKICHCEfCkIo3EdN1ebA" association="_z23fACHKEfCkIo3EdN1ebA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z25UMSHKEfCkIo3EdN1ebA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z257QCHKEfCkIo3EdN1ebA" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_e2GF0CHIEfCkIo3EdN1ebA" name="getTotalDuration"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qX-0oCHIEfCkIo3EdN1ebA" name="DTimelogSession">
+        <packagedElement xmi:type="uml:Class" xmi:id="_4W_GICHIEfCkIo3EdN1ebA" name="TimelogImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__4-Q4CHIEfCkIo3EdN1ebA" name="startTime" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FjjOECHJEfCkIo3EdN1ebA" name="endTime">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uquxUCHKEfCkIo3EdN1ebA" name="timelogimpl" type="_dJPKICHCEfCkIo3EdN1ebA" association="_uqoqsCHKEfCkIo3EdN1ebA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uqvYYCHKEfCkIo3EdN1ebA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqvYYSHKEfCkIo3EdN1ebA" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OnU7sCHJEfCkIo3EdN1ebA" name="calculateTotalDuration"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_VQhdQCHJEfCkIo3EdN1ebA" name="getIsOnGoing"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aeHjgCHJEfCkIo3EdN1ebA" name="endSession"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JMWHsCEvEfCMHZENt9PlSA" memberEnd="_JMaZICEvEfCMHZENt9PlSA _JMbnQCEvEfCMHZENt9PlSA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JMZLACEvEfCMHZENt9PlSA" source="org.eclipse.papyrus">
@@ -127,7 +177,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LhSd0CGHEfChD41pi9QTAQ" value="*"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NV4EQCGwEfCXNctFrykyhA" memberEnd="_NV5SYCGwEfCXNctFrykyhA _NV55cCGwEfCXNctFrykyhA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_NV4EQCGwEfCXNctFrykyhA" visibility="public" memberEnd="_NV5SYCGwEfCXNctFrykyhA _NV55cCGwEfCXNctFrykyhA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NV4rUCGwEfCXNctFrykyhA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV4rUSGwEfCXNctFrykyhA" key="nature" value="UML_Nature"/>
       </eAnnotations>
@@ -147,8 +197,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UhIfISGyEfCXNctFrykyhA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_UhMJgCGyEfCXNctFrykyhA" name="notesimpl" type="_WM3vkCGvEfCXNctFrykyhA" association="_UhH4ECGyEfCXNctFrykyhA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fW35oCGyEfCXNctFrykyhA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cqJ0sCGyEfCXNctFrykyhA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9ZqD4CHKEfCkIo3EdN1ebA"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RjGHECG6EfCHyP3Jxw372Q" memberEnd="_RjHVMiG6EfCHyP3Jxw372Q _RjH8QiG6EfCHyP3Jxw372Q">
@@ -173,6 +222,27 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_ij84oiG9EfCHyP3Jxw372Q" name="inviteduserimpl" type="_5-3nwCG5EfCHyP3Jxw372Q" association="_ij7DcCG9EfCHyP3Jxw372Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oD224CG9EfCHyP3Jxw372Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oESUsCG9EfCHyP3Jxw372Q" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uqoqsCHKEfCkIo3EdN1ebA" memberEnd="_uquxUCHKEfCkIo3EdN1ebA _uqvYYiHKEfCkIo3EdN1ebA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uqp40CHKEfCkIo3EdN1ebA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uqqf4CHKEfCkIo3EdN1ebA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uqvYYiHKEfCkIo3EdN1ebA" name="timelogimpl" type="_4W_GICHIEfCkIo3EdN1ebA" association="_uqoqsCHKEfCkIo3EdN1ebA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_z23fACHKEfCkIo3EdN1ebA" memberEnd="_z25UMCHKEfCkIo3EdN1ebA _z257QSHKEfCkIo3EdN1ebA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_z24tICHKEfCkIo3EdN1ebA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_z24tISHKEfCkIo3EdN1ebA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_z257QSHKEfCkIo3EdN1ebA" name="timelogimpl" type="_bqd0ICHEEfCkIo3EdN1ebA" association="_z23fACHKEfCkIo3EdN1ebA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4iReMCHKEfCkIo3EdN1ebA" visibility="protected" memberEnd="_4iSsUiHKEfCkIo3EdN1ebA _4iT6cCHKEfCkIo3EdN1ebA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4iSsUCHKEfCkIo3EdN1ebA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4iSsUSHKEfCkIo3EdN1ebA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4iT6cCHKEfCkIo3EdN1ebA" name="timelogimpl" type="_dJPKICHCEfCkIo3EdN1ebA" association="_4iReMCHKEfCkIo3EdN1ebA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DC8AkCHLEfCkIo3EdN1ebA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DFMDUCHLEfCkIo3EdN1ebA" value="*"/>
       </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CJgbQCEoEfCMHZENt9PlSA">
@@ -203,4 +273,16 @@
   <umlvmprofile:modifies xmi:id="_OfvPUCGwEfCXNctFrykyhA" base_Association="_NV4EQCGwEfCXNctFrykyhA"/>
   <umlvmprofile:adds xmi:id="_EmvCgCGzEfCXNctFrykyhA" base_Operation="_7ABm8CGyEfCXNctFrykyhA"/>
   <umlvmprofile:module xmi:id="_6C1MoCG3EfCHyP3Jxw372Q" base_Package="_1xtVsCG3EfCHyP3Jxw372Q"/>
+  <umlvmprofile:module xmi:id="_LwD30CHCEfCkIo3EdN1ebA" base_Package="_Fe1KUCHCEfCkIo3EdN1ebA"/>
+  <umlvmprofile:modifiedClass xmi:id="_Pi2lQCHIEfCkIo3EdN1ebA" base_Class="_bqd0ICHEEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_YQWg4CHIEfCkIo3EdN1ebA" base_Property="_TOWmoCHIEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_gva-8CHIEfCkIo3EdN1ebA" base_Operation="_e2GF0CHIEfCkIo3EdN1ebA"/>
+  <umlvmprofile:delta xmi:id="_ue600CHIEfCkIo3EdN1ebA" base_Package="_qX-0oCHIEfCkIo3EdN1ebA"/>
+  <umlvmprofile:delta xmi:id="_wLLiUCHIEfCkIo3EdN1ebA" base_Package="_-Gq_ECHDEfCkIo3EdN1ebA"/>
+  <umlvmprofile:modifiedClass xmi:id="_7xznMCHIEfCkIo3EdN1ebA" base_Class="_4W_GICHIEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_qB1JACHJEfCkIo3EdN1ebA" base_Property="__4-Q4CHIEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_rT6b8CHJEfCkIo3EdN1ebA" base_Property="_FjjOECHJEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_sauTACHJEfCkIo3EdN1ebA" base_Operation="_OnU7sCHJEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_tdVmkCHJEfCkIo3EdN1ebA" base_Operation="_VQhdQCHJEfCkIo3EdN1ebA"/>
+  <umlvmprofile:adds xmi:id="_vw4WgCHJEfCkIo3EdN1ebA" base_Operation="_aeHjgCHJEfCkIo3EdN1ebA"/>
 </xmi:XMI>
