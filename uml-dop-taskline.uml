@@ -228,16 +228,6 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_uJPsgCHYEfCW_tU7r-psAA" name="calculateBurndownData"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_0ca6wCHYEfCW_tU7r-psAA" name="CopyOf_DBurndownByProject_14">
-        <packagedElement xmi:type="uml:Class" xmi:id="_0ca6wSHYEfCW_tU7r-psAA" name="AnalyticImpl">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_0ca6wiHYEfCW_tU7r-psAA" name="calculateBurndownData"/>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_1ja_ECHYEfCW_tU7r-psAA" name="CopyOf_DBurndownByProject_15">
-        <packagedElement xmi:type="uml:Class" xmi:id="_1ja_ESHYEfCW_tU7r-psAA" name="AnalyticImpl">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_1ja_EiHYEfCW_tU7r-psAA" name="calculateBurndownData"/>
-        </packagedElement>
-      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_26xzkCHYEfCW_tU7r-psAA" name="DBurndownByMember">
         <packagedElement xmi:type="uml:Class" xmi:id="_A023ECHZEfCW_tU7r-psAA" name="AnalyticImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JlipkCHZEfCW_tU7r-psAA" name="analyticimpl" type="_1HTgQCHXEfCW_tU7r-psAA" association="_JleYICHZEfCW_tU7r-psAA">
@@ -463,15 +453,10 @@
   <umlvmprofile:delta xmi:id="_mYOAMCHYEfCW_tU7r-psAA" base_Package="_h0YBkCHYEfCW_tU7r-psAA"/>
   <umlvmprofile:modifiedClass xmi:id="_peUOcCHYEfCW_tU7r-psAA" base_Class="_oOu14CHYEfCW_tU7r-psAA"/>
   <umlvmprofile:adds xmi:id="_xgq7UCHYEfCW_tU7r-psAA" base_Operation="_uJPsgCHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:adds xmi:id="_0cmg8CHYEfCW_tU7r-psAA" base_Operation="_0ca6wiHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:delta xmi:id="_0cnvECHYEfCW_tU7r-psAA" base_Package="_0ca6wCHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:modifiedClass xmi:id="_0cnvESHYEfCW_tU7r-psAA" base_Class="_0ca6wSHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:adds xmi:id="_1jeCYCHYEfCW_tU7r-psAA" base_Operation="_1ja_EiHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:delta xmi:id="_1jepcCHYEfCW_tU7r-psAA" base_Package="_1ja_ECHYEfCW_tU7r-psAA"/>
-  <umlvmprofile:modifiedClass xmi:id="_1jfQgCHYEfCW_tU7r-psAA" base_Class="_1ja_ESHYEfCW_tU7r-psAA"/>
   <umlvmprofile:delta xmi:id="_5jm3ACHYEfCW_tU7r-psAA" base_Package="_26xzkCHYEfCW_tU7r-psAA"/>
   <umlvmprofile:modifiedClass xmi:id="_DZbFkCHZEfCW_tU7r-psAA" base_Class="_A023ECHZEfCW_tU7r-psAA"/>
   <umlvmprofile:adds xmi:id="_EcFccCHZEfCW_tU7r-psAA" base_Operation="_EcByECHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifies xmi:id="_K8NhkCHZEfCW_tU7r-psAA" base_Association="_JleYICHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifies xmi:id="_QSlJUCHZEfCW_tU7r-psAA" base_Association="_Pgx48CHZEfCW_tU7r-psAA"/>
+  <umlvmprofile:modifiedClass xmi:id="_OrFr4CZfEfCd7Y3k5EF5uQ" base_Class="_WM3vkCGvEfCXNctFrykyhA"/>
 </xmi:XMI>
