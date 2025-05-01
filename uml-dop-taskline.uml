@@ -47,6 +47,9 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_QwzNECEuEfCMHZENt9PlSA" name="getProjectsByUser">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_nsY_ECEuEfCMHZENt9PlSA" name="userId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ij4KICZsEfCpHrP5kP8MPQ" name="getProjectMembers">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_bK-BECZsEfCpHrP5kP8MPQ" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_jBvigCGqEfCeUs9mEJ0Sdw" name="MNotes">
@@ -459,4 +462,5 @@
   <umlvmprofile:modifies xmi:id="_K8NhkCHZEfCW_tU7r-psAA" base_Association="_JleYICHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifies xmi:id="_QSlJUCHZEfCW_tU7r-psAA" base_Association="_Pgx48CHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifiedClass xmi:id="_OrFr4CZfEfCd7Y3k5EF5uQ" base_Class="_WM3vkCGvEfCXNctFrykyhA"/>
+  <umlvmprofile:adds xmi:id="_PYWuoCZsEfCpHrP5kP8MPQ" base_Operation="_Ij4KICZsEfCpHrP5kP8MPQ"/>
 </xmi:XMI>
