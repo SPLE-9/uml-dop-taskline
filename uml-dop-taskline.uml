@@ -53,8 +53,10 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_03QTUCEtEfCMHZENt9PlSA" name="DProjectWithMembers">
         <packagedElement xmi:type="uml:Class" xmi:id="_C3LK0CEuEfCMHZENt9PlSA" name="ProjectImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_JMaZICEvEfCMHZENt9PlSA" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" aggregation="composite" association="_JMWHsCEvEfCMHZENt9PlSA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_huaIQSEvEfCMHZENt9PlSA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" aggregation="composite" association="_huXsACEvEfCMHZENt9PlSA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JMaZICEvEfCMHZENt9PlSA" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" association="_JMWHsCEvEfCMHZENt9PlSA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hens4CZZEfCd7Y3k5EF5uQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_huaIQSEvEfCMHZENt9PlSA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_huXsACEvEfCMHZENt9PlSA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_huaIQiEvEfCMHZENt9PlSA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_huavUCEvEfCMHZENt9PlSA" value="*"/>
           </ownedAttribute>
@@ -79,7 +81,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_J4KcsCGvEfCXNctFrykyhA" name="DSharedNotes" visibility="package">
         <packagedElement xmi:type="uml:Class" xmi:id="_WM3vkCGvEfCXNctFrykyhA" name="NotesImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_NV5SYCGwEfCXNctFrykyhA" name="notesimpl" type="_v_aS0CGqEfCeUs9mEJ0Sdw" aggregation="composite" association="_NV4EQCGwEfCXNctFrykyhA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NV5SYCGwEfCXNctFrykyhA" name="notesimpl" type="_v_aS0CGqEfCeUs9mEJ0Sdw" association="_NV4EQCGwEfCXNctFrykyhA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UhIfIiGyEfCXNctFrykyhA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_UhH4ECGyEfCXNctFrykyhA">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e4R5ICGyEfCXNctFrykyhA" value="*"/>
           </ownedAttribute>
@@ -389,7 +391,7 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I8c4ACHTEfCEXJqvmcK_5Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I8dfECHTEfCEXJqvmcK_5Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_I8dfFCHTEfCEXJqvmcK_5Q" name="taskimpl" type="_oRmSwCHPEfCEXJqvmcK_5Q" aggregation="composite" association="_I8cQ8CHTEfCEXJqvmcK_5Q">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_I8dfFCHTEfCEXJqvmcK_5Q" name="taskimpl" type="_oRmSwCHPEfCEXJqvmcK_5Q" association="_I8cQ8CHTEfCEXJqvmcK_5Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MlgpYCHTEfCEXJqvmcK_5Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MlvS4CHTEfCEXJqvmcK_5Q" value="*"/>
       </ownedEnd>
