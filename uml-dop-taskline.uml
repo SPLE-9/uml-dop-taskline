@@ -34,22 +34,6 @@
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3wAekCEsEfCMHZENt9PlSA" client="_bHiCQCEsEfCMHZENt9PlSA" supplier="_UACbICEsEfCMHZENt9PlSA" contract="_UACbICEsEfCMHZENt9PlSA"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_9MVnICGqEfCeUs9mEJ0Sdw" name="MProject">
-          <packagedElement xmi:type="uml:Interface" xmi:id="_9MVnISGqEfCeUs9mEJ0Sdw" name="Project"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_9MVnIiGqEfCeUs9mEJ0Sdw" name="ProjectImpl">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_9MVnIyGqEfCeUs9mEJ0Sdw" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_9MVnJCGqEfCeUs9mEJ0Sdw" name="title">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_9MVnJSGqEfCeUs9mEJ0Sdw" name="description">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_9MVnJiGqEfCeUs9mEJ0Sdw" name="completion">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
-            </ownedAttribute>
-            <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9MVnJyGqEfCeUs9mEJ0Sdw" client="_9MVnIiGqEfCeUs9mEJ0Sdw" supplier="_9MVnISGqEfCeUs9mEJ0Sdw" contract="_9MVnISGqEfCeUs9mEJ0Sdw"/>
-          </packagedElement>
-        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_03QTUCEtEfCMHZENt9PlSA" name="DProjectWithMembers">
         <packagedElement xmi:type="uml:Class" xmi:id="_C3LK0CEuEfCMHZENt9PlSA" name="ProjectImpl">
@@ -454,7 +438,6 @@
   <umlvmprofile:adds xmi:id="_US1wcCEuEfCMHZENt9PlSA" base_Operation="_QwzNECEuEfCMHZENt9PlSA"/>
   <umlvmprofile:modifies xmi:id="_USxpkCEvEfCMHZENt9PlSA" base_Association="_JMWHsCEvEfCMHZENt9PlSA"/>
   <umlvmprofile:module xmi:id="_oZtswCGqEfCeUs9mEJ0Sdw" base_Package="_jBvigCGqEfCeUs9mEJ0Sdw"/>
-  <umlvmprofile:module xmi:id="_9MvPwCGqEfCeUs9mEJ0Sdw" base_Package="_9MVnICGqEfCeUs9mEJ0Sdw"/>
   <umlvmprofile:delta xmi:id="_ua6A4CGvEfCXNctFrykyhA" base_Package="_J4KcsCGvEfCXNctFrykyhA"/>
   <umlvmprofile:modifies xmi:id="_OfvPUCGwEfCXNctFrykyhA" base_Association="_NV4EQCGwEfCXNctFrykyhA"/>
   <umlvmprofile:adds xmi:id="_EmvCgCGzEfCXNctFrykyhA" base_Operation="_7ABm8CGyEfCXNctFrykyhA"/>
