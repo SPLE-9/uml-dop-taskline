@@ -64,6 +64,9 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Ip81wCGyEfCXNctFrykyhA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_Ip8OsCGyEfCXNctFrykyhA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_4sJ8UCGxEfCXNctFrykyhA" client="_v_aS0CGqEfCeUs9mEJ0Sdw" supplier="_tt48ICGqEfCeUs9mEJ0Sdw" contract="_tt48ICGqEfCeUs9mEJ0Sdw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_yJ2UkCdREfCjmYKoGeSGKQ" name="getNotesByUserId">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_CxUdICdSEfCjmYKoGeSGKQ" name="userId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_J4KcsCGvEfCXNctFrykyhA" name="DSharedNotes" visibility="package">
