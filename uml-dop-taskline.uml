@@ -185,7 +185,9 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1etx8CZ9EfC2q_aQk8rTOQ" name="completedAt">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_dfNQwCHbEfCW_tU7r-psAA" name="getTasksByProject"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_dfNQwCHbEfCW_tU7r-psAA" name="getTasksByProject">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_FDookCdTEfCHbe1wpsqx6g" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_rjj9UCHQEfCEXJqvmcK_5Q" client="_oRmSwCHPEfCEXJqvmcK_5Q" supplier="_WjjuQCHQEfCEXJqvmcK_5Q"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_sXMZsCHQEfCEXJqvmcK_5Q" client="_oRmSwCHPEfCEXJqvmcK_5Q" supplier="_lxrTsCHPEfCEXJqvmcK_5Q"/>
@@ -201,7 +203,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ntVnwCHSEfCEXJqvmcK_5Q"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ntXc8CHSEfCEXJqvmcK_5Q" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_dnOI0CHREfCEXJqvmcK_5Q" name="getTaskComments"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_dnOI0CHREfCEXJqvmcK_5Q" name="getTaskComments">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TSG5cCdTEfCHbe1wpsqx6g" name="taskId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_nUwlICHREfCEXJqvmcK_5Q" name="CommentImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_qrsrwCHREfCEXJqvmcK_5Q" name="commentId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
