@@ -485,4 +485,6 @@
   <umlvmprofile:modifies xmi:id="_QSlJUCHZEfCW_tU7r-psAA" base_Association="_Pgx48CHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifiedClass xmi:id="_OrFr4CZfEfCd7Y3k5EF5uQ" base_Class="_WM3vkCGvEfCXNctFrykyhA"/>
   <umlvmprofile:adds xmi:id="_PYWuoCZsEfCpHrP5kP8MPQ" base_Operation="_Ij4KICZsEfCpHrP5kP8MPQ"/>
+  <umlvmprofile:modifies xmi:id="_bZFzYCduEfCfOqtHyBVSDw" base_Association="_z23fACHKEfCkIo3EdN1ebA"/>
+  <umlvmprofile:modifies xmi:id="_dIAMQCduEfCfOqtHyBVSDw" base_Association="_uqoqsCHKEfCkIo3EdN1ebA"/>
 </xmi:XMI>
