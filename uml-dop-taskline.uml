@@ -88,7 +88,19 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_RjHVMiG6EfCHyP3Jxw372Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_RjGHECG6EfCHyP3Jxw372Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YKCOgCdPEfCH7u6pJwg06w" name="appointmentId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_K76poCG4EfCHyP3Jxw372Q" client="_Cb8zsCG4EfCHyP3Jxw372Q" supplier="_-SaygCG3EfCHyP3Jxw372Q" contract="_-SaygCG3EfCHyP3Jxw372Q"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_czMyACdPEfCH7u6pJwg06w" name="getAppointmentsByCreatorId" isQuery="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hHRPQCdPEfCH7u6pJwg06w" name="creatorId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_pYCLkCdPEfCH7u6pJwg06w" name="appointments" type="_-SaygCG3EfCHyP3Jxw372Q" isOrdered="true" isUnique="false" direction="return" effect="read">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QfAAACdQEfCH7u6pJwg06w"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rnfswCdPEfCH7u6pJwg06w" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wA_ckCdPEfCH7u6pJwg06w" name="getAppointmentsByInviteeId" isQuery="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_z8HOUCdPEfCH7u6pJwg06w" name="inviteeId" type="_1qOvwCEqEfCMHZENt9PlSA" effect="read"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_4cj6sCdPEfCH7u6pJwg06w" name="appointments" type="_-SaygCG3EfCHyP3Jxw372Q" isOrdered="true" isUnique="false" direction="return" effect="read"/>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_wTUIcCG5EfCHyP3Jxw372Q" name="InvitedUser"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_5-3nwCG5EfCHyP3Jxw372Q" name="InvitedUserImpl" visibility="private">
