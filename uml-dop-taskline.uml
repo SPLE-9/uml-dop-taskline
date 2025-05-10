@@ -5,10 +5,10 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_DoGDsCEpEfCMHZENt9PlSA" name="taskline" visibility="package">
-      <packagedElement xmi:type="uml:Package" xmi:id="_DYo18CEqEfCMHZENt9PlSA" name="MUser">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_fLLIwCEqEfCMHZENt9PlSA" name="User"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_qECIsCEqEfCMHZENt9PlSA" name="UserImpl" visibility="package">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_HeCIkCErEfCMHZENt9PlSA" name="userId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA" aggregation="composite"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DYo18CEqEfCMHZENt9PlSA" name="MMember">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fLLIwCEqEfCMHZENt9PlSA" name="Member"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qECIsCEqEfCMHZENt9PlSA" name="MemberImpl" visibility="package">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HeCIkCErEfCMHZENt9PlSA" name="memberId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_S6EuECErEfCMHZENt9PlSA" name="email">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -40,12 +40,12 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JMaZICEvEfCMHZENt9PlSA" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" association="_JMWHsCEvEfCMHZENt9PlSA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hens4CZZEfCd7Y3k5EF5uQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_huaIQSEvEfCMHZENt9PlSA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_huXsACEvEfCMHZENt9PlSA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_huaIQSEvEfCMHZENt9PlSA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_huXsACEvEfCMHZENt9PlSA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_huaIQiEvEfCMHZENt9PlSA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_huavUCEvEfCMHZENt9PlSA" value="*"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_QwzNECEuEfCMHZENt9PlSA" name="getProjectsByUser">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nsY_ECEuEfCMHZENt9PlSA" name="userId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QwzNECEuEfCMHZENt9PlSA" name="getProjectsByMember">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nsY_ECEuEfCMHZENt9PlSA" name="memberId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Ij4KICZsEfCpHrP5kP8MPQ" name="getProjectMembers">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_bK-BECZsEfCpHrP5kP8MPQ" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
@@ -62,20 +62,20 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vlnn4CGsEfCXNctFrykyhA" name="notes" visibility="public">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ip81wCGyEfCXNctFrykyhA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_Ip8OsCGyEfCXNctFrykyhA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ip81wCGyEfCXNctFrykyhA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_Ip8OsCGyEfCXNctFrykyhA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_4sJ8UCGxEfCXNctFrykyhA" client="_v_aS0CGqEfCeUs9mEJ0Sdw" supplier="_tt48ICGqEfCeUs9mEJ0Sdw" contract="_tt48ICGqEfCeUs9mEJ0Sdw"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_yJ2UkCdREfCjmYKoGeSGKQ" name="getNotesByUserId">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_CxUdICdSEfCjmYKoGeSGKQ" name="userId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_yJ2UkCdREfCjmYKoGeSGKQ" name="getNotesByMemberId">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_CxUdICdSEfCjmYKoGeSGKQ" name="memberId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_J4KcsCGvEfCXNctFrykyhA" name="DSharedNotes" visibility="package">
         <packagedElement xmi:type="uml:Class" xmi:id="_WM3vkCGvEfCXNctFrykyhA" name="NotesImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NV5SYCGwEfCXNctFrykyhA" name="notesimpl" type="_v_aS0CGqEfCeUs9mEJ0Sdw" association="_NV4EQCGwEfCXNctFrykyhA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UhIfIiGyEfCXNctFrykyhA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_UhH4ECGyEfCXNctFrykyhA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UhIfIiGyEfCXNctFrykyhA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_UhH4ECGyEfCXNctFrykyhA">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e4R5ICGyEfCXNctFrykyhA" value="*"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_7ABm8CGyEfCXNctFrykyhA" name="getSharedUsers" concurrency="concurrent"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_7ABm8CGyEfCXNctFrykyhA" name="getSharedMembers" concurrency="concurrent"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_1xtVsCG3EfCHyP3Jxw372Q" name="MAppointment">
@@ -90,7 +90,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jPrIcCG4EfCHyP3Jxw372Q" name="description" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_RjHVMiG6EfCHyP3Jxw372Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_RjGHECG6EfCHyP3Jxw372Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RjHVMiG6EfCHyP3Jxw372Q" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_RjGHECG6EfCHyP3Jxw372Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YKCOgCdPEfCH7u6pJwg06w" name="appointmentId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_K76poCG4EfCHyP3Jxw372Q" client="_Cb8zsCG4EfCHyP3Jxw372Q" supplier="_-SaygCG3EfCHyP3Jxw372Q" contract="_-SaygCG3EfCHyP3Jxw372Q"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_czMyACdPEfCH7u6pJwg06w" name="getAppointmentsByCreatorId" isQuery="true">
@@ -105,9 +105,9 @@
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_4cj6sCdPEfCH7u6pJwg06w" name="appointments" type="_-SaygCG3EfCHyP3Jxw372Q" isOrdered="true" isUnique="false" direction="return" effect="read"/>
           </ownedOperation>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_wTUIcCG5EfCHyP3Jxw372Q" name="InvitedUser"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_5-3nwCG5EfCHyP3Jxw372Q" name="InvitedUserImpl" visibility="private">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Di3REiG7EfCHyP3Jxw372Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_Di2qACG7EfCHyP3Jxw372Q"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_wTUIcCG5EfCHyP3Jxw372Q" name="InvitedMember"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5-3nwCG5EfCHyP3Jxw372Q" name="InvitedMemberImpl" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Di3REiG7EfCHyP3Jxw372Q" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_Di2qACG7EfCHyP3Jxw372Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ij8RkiG9EfCHyP3Jxw372Q" name="appointmentimpl" type="_Cb8zsCG4EfCHyP3Jxw372Q" association="_ij7DcCG9EfCHyP3Jxw372Q">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ij84oCG9EfCHyP3Jxw372Q"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ij84oSG9EfCHyP3Jxw372Q" value="*"/>
@@ -120,7 +120,7 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_dJPKICHCEfCkIo3EdN1ebA" name="TimelogImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_kWUb4CHCEfCkIo3EdN1ebA" name="timelogId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vNLQsCHCEfCkIo3EdN1ebA" name="taskId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_0a7H8CHCEfCkIo3EdN1ebA" name="userId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0a7H8CHCEfCkIo3EdN1ebA" name="memberId" visibility="protected" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_7CKhsCHCEfCkIo3EdN1ebA" name="timelogDate" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
@@ -130,7 +130,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_RcidACHDEfCkIo3EdN1ebA" name="timelogNotes" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4iSsUiHKEfCkIo3EdN1ebA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" aggregation="composite" association="_4iReMCHKEfCkIo3EdN1ebA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4iSsUiHKEfCkIo3EdN1ebA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" aggregation="composite" association="_4iReMCHKEfCkIo3EdN1ebA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_y8BGsCHSEfCEXJqvmcK_5Q" name="taskimpl" type="_oRmSwCHPEfCEXJqvmcK_5Q" association="_y7_4kCHSEfCEXJqvmcK_5Q"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_5R5BcCHDEfCkIo3EdN1ebA" client="_dJPKICHCEfCkIo3EdN1ebA" supplier="_OoQ0ACHCEfCkIo3EdN1ebA" contract="_OoQ0ACHCEfCkIo3EdN1ebA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_kBEIICHDEfCkIo3EdN1ebA" name="getTimelogDetail"/>
@@ -180,7 +180,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vWu3gCHREfCEXJqvmcK_5Q" name="createdAt">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6qspoiHSEfCEXJqvmcK_5Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_6qsCkCHSEfCEXJqvmcK_5Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6qspoiHSEfCEXJqvmcK_5Q" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_6qsCkCHSEfCEXJqvmcK_5Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_I8dfESHTEfCEXJqvmcK_5Q" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" association="_I8cQ8CHTEfCEXJqvmcK_5Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1etx8CZ9EfC2q_aQk8rTOQ" name="completedAt">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
@@ -216,7 +216,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9ACl0iHREfCEXJqvmcK_5Q" name="taskimpl" type="_Y8CMECHREfCEXJqvmcK_5Q" association="_9AB-wCHREfCEXJqvmcK_5Q"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Zvyu0iHSEfCEXJqvmcK_5Q" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_ZvyHwCHSEfCEXJqvmcK_5Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Zvyu0iHSEfCEXJqvmcK_5Q" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_ZvyHwCHSEfCEXJqvmcK_5Q"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_pAPPgCHREfCEXJqvmcK_5Q" name="Comment"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_4tWBkCHREfCEXJqvmcK_5Q" client="_nUwlICHREfCEXJqvmcK_5Q" supplier="_pAPPgCHREfCEXJqvmcK_5Q"/>
@@ -259,7 +259,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JljQoCHZEfCW_tU7r-psAA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JljQoSHZEfCW_tU7r-psAA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_e8_vUiHZEfCW_tU7r-psAA" name="userimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_e8-hMCHZEfCW_tU7r-psAA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_e8_vUiHZEfCW_tU7r-psAA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_e8-hMCHZEfCW_tU7r-psAA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_EcByECHZEfCW_tU7r-psAA" name="calculateBurndownData"/>
         </packagedElement>
       </packagedElement>
@@ -315,7 +315,7 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Di3RECG7EfCHyP3Jxw372Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Di3RESG7EfCHyP3Jxw372Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Di4fMiG7EfCHyP3Jxw372Q" name="inviteduserimpl" type="_5-3nwCG5EfCHyP3Jxw372Q" association="_Di2qACG7EfCHyP3Jxw372Q">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Di4fMiG7EfCHyP3Jxw372Q" name="invitedmemberimpl" type="_5-3nwCG5EfCHyP3Jxw372Q" association="_Di2qACG7EfCHyP3Jxw372Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UE7DQCG9EfCHyP3Jxw372Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFGCYCG9EfCHyP3Jxw372Q" value="*"/>
       </ownedEnd>
@@ -324,7 +324,7 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ij8RkCG9EfCHyP3Jxw372Q" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ij8RkSG9EfCHyP3Jxw372Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ij84oiG9EfCHyP3Jxw372Q" name="inviteduserimpl" type="_5-3nwCG5EfCHyP3Jxw372Q" association="_ij7DcCG9EfCHyP3Jxw372Q">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ij84oiG9EfCHyP3Jxw372Q" name="invitedmemberimpl" type="_5-3nwCG5EfCHyP3Jxw372Q" association="_ij7DcCG9EfCHyP3Jxw372Q">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oD224CG9EfCHyP3Jxw372Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oESUsCG9EfCHyP3Jxw372Q" value="*"/>
       </ownedEnd>
