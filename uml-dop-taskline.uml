@@ -40,15 +40,18 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JMaZICEvEfCMHZENt9PlSA" name="projectimpl" type="_bHiCQCEsEfCMHZENt9PlSA" association="_JMWHsCEvEfCMHZENt9PlSA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hens4CZZEfCd7Y3k5EF5uQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_huaIQSEvEfCMHZENt9PlSA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_huXsACEvEfCMHZENt9PlSA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_huaIQiEvEfCMHZENt9PlSA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_huavUCEvEfCMHZENt9PlSA" value="*"/>
-          </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_QwzNECEuEfCMHZENt9PlSA" name="getProjectsByMember">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nsY_ECEuEfCMHZENt9PlSA" name="memberId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LYowcDGTEfCGeLpn1MpjMA" name="ProjectMember"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ThmboDGTEfCGeLpn1MpjMA" name="ProjectMemberImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jGgT8DGTEfCGeLpn1MpjMA" name="projectMemberId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SxJkMDGVEfCGeLpn1MpjMA" name="projectimpl" type="_C3LK0CEuEfCMHZENt9PlSA" association="_SxF50DGVEfCGeLpn1MpjMA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dFycwDGVEfCGeLpn1MpjMA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" association="_dFuyYDGVEfCGeLpn1MpjMA"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wHUe4DGTEfCGeLpn1MpjMA" client="_ThmboDGTEfCGeLpn1MpjMA" supplier="_LYowcDGTEfCGeLpn1MpjMA" contract="_LYowcDGTEfCGeLpn1MpjMA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RjmroDGYEfCGeLpn1MpjMA" name="getProjectsByMember">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ofO54DGYEfCGeLpn1MpjMA" name="memberId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ij4KICZsEfCpHrP5kP8MPQ" name="getProjectMembers">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_bK-BECZsEfCpHrP5kP8MPQ" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_t4alEDGYEfCGeLpn1MpjMA" name="getProjectMembers">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6VQgQDGYEfCGeLpn1MpjMA" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
         </packagedElement>
       </packagedElement>
@@ -270,15 +273,6 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_JMbnQCEvEfCMHZENt9PlSA" name="projectimpl" type="_C3LK0CEuEfCMHZENt9PlSA" association="_JMWHsCEvEfCMHZENt9PlSA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_huXsACEvEfCMHZENt9PlSA" memberEnd="_huaIQSEvEfCMHZENt9PlSA _huavUSEvEfCMHZENt9PlSA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_huZhMCEvEfCMHZENt9PlSA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_huaIQCEvEfCMHZENt9PlSA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_huavUSEvEfCMHZENt9PlSA" name="projectimpl" type="_C3LK0CEuEfCMHZENt9PlSA" association="_huXsACEvEfCMHZENt9PlSA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LgsA4CGHEfChD41pi9QTAQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LhSd0CGHEfChD41pi9QTAQ" value="*"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_NV4EQCGwEfCXNctFrykyhA" visibility="public" memberEnd="_NV5SYCGwEfCXNctFrykyhA _NV55cCGwEfCXNctFrykyhA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NV4rUCGwEfCXNctFrykyhA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV4rUSGwEfCXNctFrykyhA" key="nature" value="UML_Nature"/>
@@ -425,6 +419,24 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kWPE4CHZEfCW_tU7r-psAA" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SxF50DGVEfCGeLpn1MpjMA" memberEnd="_SxJkMDGVEfCGeLpn1MpjMA _SxKLQjGVEfCGeLpn1MpjMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SxI9IDGVEfCGeLpn1MpjMA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SxI9ITGVEfCGeLpn1MpjMA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SxKLQjGVEfCGeLpn1MpjMA" name="projectmemberimpl" type="_ThmboDGTEfCGeLpn1MpjMA" association="_SxF50DGVEfCGeLpn1MpjMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YFFjADGVEfCGeLpn1MpjMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YGfRMDGVEfCGeLpn1MpjMA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dFuyYDGVEfCGeLpn1MpjMA" memberEnd="_dFycwDGVEfCGeLpn1MpjMA _dFzq4DGVEfCGeLpn1MpjMA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dFx1sDGVEfCGeLpn1MpjMA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dFx1sTGVEfCGeLpn1MpjMA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dFzq4DGVEfCGeLpn1MpjMA" name="projectmemberimpl" type="_ThmboDGTEfCGeLpn1MpjMA" association="_dFuyYDGVEfCGeLpn1MpjMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ij6CMDGXEfCGeLpn1MpjMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkIEoDGXEfCGeLpn1MpjMA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_CJgbQCEoEfCMHZENt9PlSA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CJnwACEoEfCMHZENt9PlSA" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CJnwASEoEfCMHZENt9PlSA" key="Version" value="0.0.4"/>
@@ -450,7 +462,6 @@
   <umlvmprofile:module xmi:id="_JFyeoCEtEfCMHZENt9PlSA" base_Package="_GjDRkCEsEfCMHZENt9PlSA"/>
   <umlvmprofile:delta xmi:id="_4tUl8CEtEfCMHZENt9PlSA" base_Package="_03QTUCEtEfCMHZENt9PlSA"/>
   <umlvmprofile:modifiedClass xmi:id="_E2-fYCEuEfCMHZENt9PlSA" base_Class="_C3LK0CEuEfCMHZENt9PlSA"/>
-  <umlvmprofile:adds xmi:id="_US1wcCEuEfCMHZENt9PlSA" base_Operation="_QwzNECEuEfCMHZENt9PlSA"/>
   <umlvmprofile:modifies xmi:id="_USxpkCEvEfCMHZENt9PlSA" base_Association="_JMWHsCEvEfCMHZENt9PlSA"/>
   <umlvmprofile:module xmi:id="_oZtswCGqEfCeUs9mEJ0Sdw" base_Package="_jBvigCGqEfCeUs9mEJ0Sdw"/>
   <umlvmprofile:delta xmi:id="_ua6A4CGvEfCXNctFrykyhA" base_Package="_J4KcsCGvEfCXNctFrykyhA"/>
@@ -484,7 +495,8 @@
   <umlvmprofile:modifies xmi:id="_K8NhkCHZEfCW_tU7r-psAA" base_Association="_JleYICHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifies xmi:id="_QSlJUCHZEfCW_tU7r-psAA" base_Association="_Pgx48CHZEfCW_tU7r-psAA"/>
   <umlvmprofile:modifiedClass xmi:id="_OrFr4CZfEfCd7Y3k5EF5uQ" base_Class="_WM3vkCGvEfCXNctFrykyhA"/>
-  <umlvmprofile:adds xmi:id="_PYWuoCZsEfCpHrP5kP8MPQ" base_Operation="_Ij4KICZsEfCpHrP5kP8MPQ"/>
   <umlvmprofile:modifies xmi:id="_bZFzYCduEfCfOqtHyBVSDw" base_Association="_z23fACHKEfCkIo3EdN1ebA"/>
   <umlvmprofile:modifies xmi:id="_dIAMQCduEfCfOqtHyBVSDw" base_Association="_uqoqsCHKEfCkIo3EdN1ebA"/>
+  <umlvmprofile:addedInterface xmi:id="_ZClX8DGTEfCGeLpn1MpjMA" base_Interface="_LYowcDGTEfCGeLpn1MpjMA"/>
+  <umlvmprofile:addedClass xmi:id="_aGDAEDGTEfCGeLpn1MpjMA" base_Class="_ThmboDGTEfCGeLpn1MpjMA"/>
 </xmi:XMI>
