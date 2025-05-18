@@ -136,7 +136,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4iSsUiHKEfCkIo3EdN1ebA" name="memberimpl" type="_qECIsCEqEfCMHZENt9PlSA" aggregation="composite" association="_4iReMCHKEfCkIo3EdN1ebA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_y8BGsCHSEfCEXJqvmcK_5Q" name="taskimpl" type="_oRmSwCHPEfCEXJqvmcK_5Q" association="_y7_4kCHSEfCEXJqvmcK_5Q"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_5R5BcCHDEfCkIo3EdN1ebA" client="_dJPKICHCEfCkIo3EdN1ebA" supplier="_OoQ0ACHCEfCkIo3EdN1ebA" contract="_OoQ0ACHCEfCkIo3EdN1ebA"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_kBEIICHDEfCkIo3EdN1ebA" name="getTimelogDetail"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kBEIICHDEfCkIo3EdN1ebA" name="getMyTimelog" concurrency="guarded"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_uRDxQCHDEfCkIo3EdN1ebA" name="validateTimelog"/>
         </packagedElement>
       </packagedElement>
@@ -149,14 +149,10 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z25UMSHKEfCkIo3EdN1ebA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z257QCHKEfCkIo3EdN1ebA" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_e2GF0CHIEfCkIo3EdN1ebA" name="getTotalDuration"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_qX-0oCHIEfCkIo3EdN1ebA" name="DTimelogSession">
         <packagedElement xmi:type="uml:Class" xmi:id="_4W_GICHIEfCkIo3EdN1ebA" name="TimelogImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__4-Q4CHIEfCkIo3EdN1ebA" name="startTime" isUnique="false">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FjjOECHJEfCkIo3EdN1ebA" name="endTime">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
@@ -164,9 +160,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uqvYYCHKEfCkIo3EdN1ebA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqvYYSHKEfCkIo3EdN1ebA" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_OnU7sCHJEfCkIo3EdN1ebA" name="calculateTotalDuration"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_VQhdQCHJEfCkIo3EdN1ebA" name="getIsOnGoing"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_aeHjgCHJEfCkIo3EdN1ebA" name="endSession"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_aFxGMCHPEfCEXJqvmcK_5Q" name="MTask">
@@ -188,7 +181,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1etx8CZ9EfC2q_aQk8rTOQ" name="completedAt">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_dfNQwCHbEfCW_tU7r-psAA" name="getTasksByProject">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_dfNQwCHbEfCW_tU7r-psAA" name="getTasksByProject" concurrency="concurrent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_FDookCdTEfCHbe1wpsqx6g" name="projectId" type="_1qOvwCEqEfCMHZENt9PlSA"/>
           </ownedOperation>
         </packagedElement>
@@ -471,15 +464,10 @@
   <umlvmprofile:module xmi:id="_LwD30CHCEfCkIo3EdN1ebA" base_Package="_Fe1KUCHCEfCkIo3EdN1ebA"/>
   <umlvmprofile:modifiedClass xmi:id="_Pi2lQCHIEfCkIo3EdN1ebA" base_Class="_bqd0ICHEEfCkIo3EdN1ebA"/>
   <umlvmprofile:adds xmi:id="_YQWg4CHIEfCkIo3EdN1ebA" base_Property="_TOWmoCHIEfCkIo3EdN1ebA"/>
-  <umlvmprofile:adds xmi:id="_gva-8CHIEfCkIo3EdN1ebA" base_Operation="_e2GF0CHIEfCkIo3EdN1ebA"/>
   <umlvmprofile:delta xmi:id="_ue600CHIEfCkIo3EdN1ebA" base_Package="_qX-0oCHIEfCkIo3EdN1ebA"/>
   <umlvmprofile:delta xmi:id="_wLLiUCHIEfCkIo3EdN1ebA" base_Package="_-Gq_ECHDEfCkIo3EdN1ebA"/>
   <umlvmprofile:modifiedClass xmi:id="_7xznMCHIEfCkIo3EdN1ebA" base_Class="_4W_GICHIEfCkIo3EdN1ebA"/>
-  <umlvmprofile:adds xmi:id="_qB1JACHJEfCkIo3EdN1ebA" base_Property="__4-Q4CHIEfCkIo3EdN1ebA"/>
   <umlvmprofile:adds xmi:id="_rT6b8CHJEfCkIo3EdN1ebA" base_Property="_FjjOECHJEfCkIo3EdN1ebA"/>
-  <umlvmprofile:adds xmi:id="_sauTACHJEfCkIo3EdN1ebA" base_Operation="_OnU7sCHJEfCkIo3EdN1ebA"/>
-  <umlvmprofile:adds xmi:id="_tdVmkCHJEfCkIo3EdN1ebA" base_Operation="_VQhdQCHJEfCkIo3EdN1ebA"/>
-  <umlvmprofile:adds xmi:id="_vw4WgCHJEfCkIo3EdN1ebA" base_Operation="_aeHjgCHJEfCkIo3EdN1ebA"/>
   <umlvmprofile:module xmi:id="_ivCpICHPEfCEXJqvmcK_5Q" base_Package="_aFxGMCHPEfCEXJqvmcK_5Q"/>
   <umlvmprofile:delta xmi:id="_WyMKsCHREfCEXJqvmcK_5Q" base_Package="_UkEGQCHREfCEXJqvmcK_5Q"/>
   <umlvmprofile:modifiedClass xmi:id="_a9sh0CHREfCEXJqvmcK_5Q" base_Class="_Y8CMECHREfCEXJqvmcK_5Q"/>
